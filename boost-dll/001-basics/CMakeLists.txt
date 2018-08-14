@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 # Project
-project(boost-dll-001-helloworld)
+project(boost-dll-001-basics)
 
 # Search Boost
 find_package(Boost REQUIRED COMPONENTS filesystem)
@@ -23,10 +23,6 @@ set(example_SRC_DIR src)
 set(plugin_SOURCES ${example_SRC_DIR}/plugin.cpp)
 set(plugin_HEADERS ${example_INC_DIR}/plugin.hpp ${example_INC_DIR}/plugin_base.hpp)
 set(executable_SOURCES ${example_SRC_DIR}/main.cpp)
-
-# Setting RPATH
-# See https://cmake.org/Wiki/CMake_RPATH_handling
-# set(CMAKE_INSTALL_RPATH ${CMAKE_INSTALL_PREFIX}/${example_LIB_DIR})
 
 # Add plugin to project
 add_library(plugin SHARED ${plugin_SOURCES})
