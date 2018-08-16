@@ -34,3 +34,8 @@
 # Build Directory
 build
 install
+
+# Project files
+
+.vscode
+
