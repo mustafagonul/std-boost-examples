@@ -1,6 +1,5 @@
 #include <plugin.hpp>
 
-#include <boost/config.hpp> // for BOOST_SYMBOL_EXPORT
 #include <boost/dll/alias.hpp>
 
 #include <iostream>
